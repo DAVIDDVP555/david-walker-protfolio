@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="David Walker - Cybersecurity professional at OSAI. Security assessments, threat analysis, penetration testing and security training.">
+  <title>David Walker | Cybersecurity</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#05070b;color:#f5f7fb;line-height:1.6
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:100;
+      background:rgba(5,7,11,.94);backdrop-filter:blur(10px);
+      border-bottom:1px solid #123b69
+    }
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:24px;font-weight:800;letter-spacing:1px}
+    .logo span{color:#168cff}
+    nav ul{display:flex;gap:24px;list-style:none}
+    nav a:hover{color:#168cff}
+    .menu{display:none;font-size:28px;cursor:pointer}
+    .hero{
+      min-height:90vh;display:flex;align-items:center;
+      background:
+        radial-gradient(circle at 75% 25%,rgba(0,130,255,.18),transparent 32%),
+        linear-gradient(135deg,#05070b,#07111d 55%,#05070b)
+    }
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+    .tag{color:#168cff;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.02;margin:12px 0}
+    h1 span{color:#168cff}
+    .hero p{color:#b8c2ce;font-size:18px;max-width:650px}
+    .buttons{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:13px 21px;border-radius:8px;
+      border:1px solid #168cff;font-weight:700
+    }
+    .btn.primary{background:#168cff;color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-card{
+      border:1px solid #12599a;border-radius:18px;padding:10px;
+      background:#07101a;box-shadow:0 0 45px rgba(0,120,255,.13)
+    }
+    .hero-card img{width:100%;display:block;border-radius:12px}
+    section{padding:90px 0}
+    .section-title{text-align:center;margin-bottom:45px}
+    .section-title h2{font-size:38px}
+    .section-title span{color:#168cff}
+    .section-title p{color:#9eabb9;margin-top:8px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{
+      background:#0a111a;border:1px solid #173b60;border-radius:14px;
+      padding:28px;transition:.25s
+    }
+    .card:hover{transform:translateY(-5px);border-color:#168cff}
+    .icon{font-size:32px;margin-bottom:12px}
+    .card h3{margin-bottom:8px}
+    .card p{color:#aeb9c6}
+    .skills{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .skill{margin-bottom:18px}
+    .skill-top{display:flex;justify-content:space-between;margin-bottom:6px}
+    .bar{height:8px;background:#17202b;border-radius:20px;overflow:hidden}
+    .fill{height:100%;background:#168cff;border-radius:20px}
+    .contact{
+      background:linear-gradient(135deg,#071321,#05070b);
+      border-top:1px solid #123b69;border-bottom:1px solid #123b69
+    }
+    .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+    .contact-info p{margin:12px 0;color:#bdc7d2}
+    .contact-info strong{color:#fff}
+    footer{text-align:center;padding:28px;color:#7f8b98}
+    @media(max-width:800px){
+      nav ul{display:none;position:absolute;top:70px;left:0;right:0;background:#05070b;padding:20px;flex-direction:column}
+      nav ul.open{display:flex}.menu{display:block}
+      .hero-grid,.contact-box{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .skills{grid-template-columns:1fr}
+      section{padding:65px 0}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">DAVID<span>WALKER</span></a>
+      <div class="menu" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Expertise</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="tag">Cybersecurity • OSAI</div>
+        <h1>Protecting <span>systems.</span><br>Securing the future.</h1>
+        <p>
+          I am David Walker, a cybersecurity professional focused on security
+          assessments, threat analysis, penetration testing, and security awareness.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">Get In Touch</a>
+          <a class="btn" href="#services">View Services</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/profile.png" alt="David Walker cybersecurity profile">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About <span>Me</span></h2>
+        <p>Cybersecurity skills focused on practical protection.</p>
+      </div>
+      <div class="card">
+        <p>
+          I am David Walker, a cybersecurity professional at OSAI. I am interested
+          in protecting systems, networks and data from evolving digital threats,
+          while helping individuals and organizations improve their security posture.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>What I <span>Do</span></h2>
+        <p>Security-focused services and support.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="icon">🛡️</div><h3>Security Assessments</h3><p>Identify weaknesses and improve your security posture.</p></div>
+        <div class="card"><div class="icon">🎯</div><h3>Penetration Testing</h3><p>Authorized testing to discover and help fix security gaps.</p></div>
+        <div class="card"><div class="icon">🔎</div><h3>Threat Analysis</h3><p>Analyze potential threats and improve defensive readiness.</p></div>
+        <div class="card"><div class="icon">🎓</div><h3>Security Training</h3><p>Build practical cybersecurity awareness and safer habits.</p></div>
+        <div class="card"><div class="icon">🌐</div><h3>Network Security</h3><p>Support stronger protection for networks and connected systems.</p></div>
+        <div class="card"><div class="icon">🚨</div><h3>Incident Response</h3><p>Help organizations understand and respond to security incidents.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2>My <span>Expertise</span></h2>
+        <p>Areas I am developing and working in.</p>
+      </div>
+      <div class="skills">
+        <div>
+          <div class="skill"><div class="skill-top"><b>Network Security</b><span>90%</span></div><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+          <div class="skill"><div class="skill-top"><b>Web Application Security</b><span>85%</span></div><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+          <div class="skill"><div class="skill-top"><b>Vulnerability Assessment</b><span>88%</span></div><div class="bar"><div class="fill" style="width:88%"></div></div></div>
+          <div class="skill"><div class="skill-top"><b>Penetration Testing</b><span>82%</span></div><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+        </div>
+        <div>
+          <div class="skill"><div class="skill-top"><b>Threat Hunting</b><span>80%</span></div><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-top"><b>Incident Response</b><span>78%</span></div><div class="bar"><div class="fill" style="width:78%"></div></div></div>
+          <div class="skill"><div class="skill-top"><b>Risk Management</b><span>80%</span></div><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+          <div class="skill"><div class="skill-top"><b>Security Awareness</b><span>86%</span></div><div class="bar"><div class="fill" style="width:86%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Let's <span>Connect</span></h2>
+        <p>Have a cybersecurity question or project? Get in touch.</p>
+      </div>
+      <div class="contact-box">
+        <div class="card contact-info">
+          <p><strong>Name:</strong> David Walker</p>
+          <p><strong>Organization:</strong> OSAI</p>
+          <p><strong>Email:</strong> <a href="mailto:davidmureithi026@gmail.com">davidmureithi026@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+254715961669">0715 961 669</a></p>
+          <p><strong>Location:</strong> Ruiru Bypass, Kiambu, Kenya</p>
+        </div>
+        <div class="card">
+          <h3>Ready to improve your security?</h3>
+          <p style="color:#aeb9c6;margin:12px 0 20px">
+            Contact me to discuss your cybersecurity needs and authorized security projects.
+          </p>
+          <a class="btn primary" href="mailto:davidmureithi026@gmail.com">Email Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 David Walker • OSAI • Cybersecurity
+</footer>
+
+</body>
+</html>
